@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    cursor: pointer;
+    scroll-behavior: smooth;
 }
 body{
     width: 100vw;
@@ -14,11 +14,11 @@ body{
     background: #ffffff url(813.gif)no-repeat center;
     z-index:10;
 }
-.navbar{
+#navbar{
     font-family: 'Poppins', sans-serif;
-
+    overflow: hidden;
 }
-.navbar h2{
+#navbar h2{
     margin-bottom:8px;
     font-style: normal;
     font-size: 34px;
@@ -29,7 +29,7 @@ body{
     margin-left: 34px;
     color: #000000;
 }
-.navbar p{
+#navbar p{
     position: absolute;
     margin-top: 72px;
     width: 200px;
@@ -111,14 +111,14 @@ border: none;
     position :realtive;
     filter: grayscale(100%);
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 480px){
     html,body{
         width: 100%;
         height: 100%;
         margin:0;
         padding:0;
     }
-    .navbar h2{
+    #navbar h2{
         margin-bottom:4px;
         font-style: normal;
         font-size: 20px;
@@ -129,7 +129,7 @@ border: none;
         margin-left: 18px;
         color: #000000;
     }
-    .navbar p{
+    #navbar p{
         position: absolute;
         width: 200px;
         font-style: normal;
@@ -235,7 +235,51 @@ border: none;
                 }
 
 }
-
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .Damian{
+        margin-left: 500px;
+        margin-top: -2500px;
+        width: 50%;
+        position :realtive;
+        filter: grayscale(100%);
+    }
+    .landing h4{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 36px;
+        letter-spacing: 0.2em;
+        color: #A2A2A2;
+        }
+    .landing h1{
+            width: 545px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 57px;
+            color: #000000;
+            margin-top: 13px;
+            }
+            .landing h3{
+                position: absolute;
+                width:500px;
+                height: 108px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size:20px;
+                line-height:165%;
+                margin-top: 40px;
+                color: #727272;
+                } 
+                .menu ul li{
+                    text-align: right;
+                    padding-top:46px;
+                    padding-right: 34px;
+                }
+}
 .about{
     margin-left: 68px;
 }
@@ -278,11 +322,11 @@ margin-left: 68px;
 }
 .para2{
     position: absolute;
-width: 650px;
-height: 242px;
-font-family: Inter;
-font-style: normal;
-font-weight: 500;
+  width: 650px;
+  height: 242px;
+  font-family: Inter;
+  font-style: normal;
+ font-weight: 500;
 font-size: 20px;
 line-height: 44px;
 /* or 44px */
@@ -317,97 +361,96 @@ margin-left: 68px;
 .icons ul a{
     color: #ffffff;
 }
-@media only screen and (max-width: 768px){
-    .container{
-        padding-right: 0px;
-        margin-right: 0px;
-        margin-top: 700px;
-    }
+@media screen and (max-width: 480px){
     .about{
         margin-left: 15px;
     }
     .about h4{
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 36px;
-    letter-spacing: 0.2em;
-    position: absolute;
-    width: 173px;
-    height: 30px;
-    color: #A2A2A2;
-    margin-top: 150px;
-    }
-    .about h1{
-    position: absolute;
-    width: 380px;
-    height: 97px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 97px;
-    color: #000000;
-    margin-top: 160px;
-    }
-    .para1{
+        position:absolute;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        position:relative;
+        height: 30px;
+        color: #A2A2A2;
+        margin-top: 750px;
+        }
+        .about h1{
         position: absolute;
-        width: 290px;
-        height: 108px;
+        height: 97px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 97px;
+        color: #000000;
+        margin-top: -10px;
+        }
+        .para1{
+        position: absolute;
+        width: 325px;
+        height: 242px;
         font-family: Inter;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;
-        line-height: 165.02%;
-        margin-top: 270px;
+        line-height: 25px;
+        /* or 44px */
+        margin-top: 80px;
         color: #727272;
         margin-left: 15px;
-    }
-    .para2{
-        position: absolute;
-        width: 290px;
-        height: 108px;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 500;
+        }
+        .para2{
+            position: absolute;
+          width: 325px;
+          height: 242px;
+          font-family: Inter;
+          font-style: normal;
+         font-weight: 500;
         font-size: 15px;
-        line-height: 165.02%;
-        margin-top: 450px;
+        line-height: 25px;
+        /* or 44px */
+        margin-top: 230px;
         color: #727272;
         margin-left: 15px;
-    }
-    .social{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-    }
-    .icons{
-        margin-top: 630px;
-        margin-left: -19px;
-    }
-    .icons ul li{
-        list-style: none;
-    }
-    .icons ul li img{
-        width: 40px;
-    }
-    .icons ul li{
-        display: inline-block;
-        list-style-type: none;
-    }
-    .first{
-        padding-left: 10px;
-    }
-    .first1{
-        margin-left: 12px;
-        padding-right: 15px ;
-    }
-    .icons ul a{
-        color: #ffffff;
-    }
+        }
+        .social{
+            display: inline-block;
+            justify-content: space-between;
+            padding-bottom: 500px;
+            
+        }
+        .icons{
+            margin-top: 360px;
+            margin-left: 15px;
+        }
+        .icons ul li{
+            list-style: none;
+        }
+        .icons ul li{
+            display: inline-block;
+            list-style-type: none;
+        }
+        .first{
+            padding: 0px 5px;
+        }
+        .first1{
+            padding-left: 5px;
+            padding-right: 5px ;
+        }
+        .icons ul a{
+            color: #ffffff;
+        }
+        .first1 img{
+            width: 60%;
+        }
+        .first img{
+            width: 60%;
+        }
 }
-
 .Experience{
     margin-left: 68px;
 }
@@ -515,8 +558,9 @@ border: none;
 .btn{
     padding-bottom: 200px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
     .Experience{
+        margin-top: 300px;
         margin-left: 15px;
         margin-right: 0px;
     }
@@ -530,7 +574,7 @@ border: none;
         position: absolute;
         height: 30px;
         color: #A2A2A2;
-        margin-top: 100px;
+        margin-top: -700px;
     }
     .Experience h1{
         position: absolute;
@@ -541,7 +585,7 @@ border: none;
         font-size: 38px;
         line-height: 97px;
         color: #000000;
-    margin-top: 110px;
+        margin-top: -700px;
     }
     .timeline{
         font-family: Inter;
@@ -552,7 +596,7 @@ border: none;
         width: 80%;
         height: auto;
         max-width: 0 auto;
-        margin-top: -450px;
+        margin-top: -550px;
         margin-left:15px;
     }
     .timeline ul{
@@ -600,7 +644,7 @@ border: none;
     .Download{
         width: 250px;
         height: 70px;
-        top: 2900px;
+        top: 2600px;
         left: 55px;
         background: #000000;
         border-radius: 12px;
@@ -624,7 +668,33 @@ border: none;
     }
 
 }
-
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .Download{
+        width: 250px;
+        height: 70px;
+        top: 2900px;
+        left: 55px;
+        background: #000000;
+        border-radius: 12px;
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 29px;
+        border: none;
+        }
+        .timeline::before{
+            content:'';
+            position: absolute;
+            height: 70%;
+            width:1px;
+            transform: translateX(-50%);
+            background-color: #565656;
+            opacity: 70%;
+        }
+        
+} 
 /*Projects Section*/
 .projects{
     background-color: #ffffff;
@@ -843,7 +913,7 @@ color: #000000;
     transition: 0.2s ease-in;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .projects{
         background-color: #ffffff;
         display: flex;
@@ -1092,9 +1162,6 @@ color: #000000;
   line-height: 97px;
   margin-bottom: 20px;
  }
- hr{
-     padding-top: 20px;
- }
  .containerinfo h4{
     font-family: Inter;
     font-style: normal;
@@ -1150,7 +1217,7 @@ color: #000000;
  color: #727272;
  }
  .latestprojects{
-    padding-right: 150px;
+    padding-right: 260px;
  }
  .latestprojects h4{
     font-family: Inter;
@@ -1195,7 +1262,7 @@ color: #000000;
  color: #727272;
  }
  .follow{
-    padding-right:50px;
+    padding-right:150px;
  
  }
  .follow h4{
@@ -1230,15 +1297,15 @@ color: #000000;
     text-align: right;
     padding-right:50px;
 }
-.Up{
-    padding-top: 0px;
+.Up img{
+    padding-top: -200px;
 }
- @media only screen and (max-width:768px){
+ @media only screen and (max-width:480px){
      body{
          overflow-x: hidden;
      }
     .containerinfo{
-       padding-left: 0px;
+       padding-left: 5px;
     }
     .Contact h5{
        text-align: center;
@@ -1314,7 +1381,7 @@ color: #000000;
     color: #000000
     }
     .latestprojects{
-       padding-right: 20px;
+       padding-right:50px;
     }
     .latestprojects h4{
        font-family: Inter;
@@ -1349,6 +1416,7 @@ color: #000000;
        color: #000000;
        margin-bottom: 20px;
     }
+
     .currentava p{
        font-family: Inter;
        font-style: normal;
@@ -1382,7 +1450,7 @@ color: #000000;
        padding-left: 0px;
     }
     .follow{
-        padding-right: 0px;
+        padding-right: 10px;
     }
     .mail{
         margin-top:30px;
@@ -1399,4 +1467,171 @@ color: #000000;
     .Up ul li img{
         width:50px;
     }
+ }
+ @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+   .containerinfo{
+      padding-left: 25px;
+   }
+   .Contact h5{
+      text-align: center;
+      font-family: Inter;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0.1em;
+     color: #A2A2A2;
+     margin-bottom: 20px;
+  }
+  .Contact h2{
+    margin-top: 0px;
+      text-align: center;
+      font-family: Inter;
+      font-style: normal;
+     font-weight: bold;
+     font-size: 50px;
+     line-height: 50px;
+ }
+ .containerinfo h4{
+   font-family: Inter;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 20px;
+   color: #000000;
+   margin-bottom: 20px;
+ }
+ .para{
+   font-family: Inter;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height:20px;
+   width: 50%;
+   color: #727272;
+   }
+   .email{
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   
+   color: #000000
+   }
+   .email span{
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   
+   color: #727272;
+   }
+   .phone span{
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   
+   color: #727272;
+   }
+  .phone{
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   
+   color: #000000
+   }
+   .latestprojects{
+      padding-right:50px;
+   }
+   .latestprojects h4{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 18px;
+      color: #000000;
+      margin-bottom: 20px;
+   }
+   .latestprojects ul li{
+      list-style: none;
+      text-align: left;
+      padding-left: 0px;
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   
+   color: #000000
+   }
+   .latestprojects ul{
+      padding-right: 60px;
+   }
+   .currentava h4{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height:18px;
+      color: #000000;
+      margin-bottom: 20px;
+   }
+   .currentava p{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height:20px;
+      width: 50%;
+      color: #727272;
+   }
+   .follow h4{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 18px;
+      margin-bottom: 20px;
+      color: #000000;
+   }
+   .follow ul a{
+      text-decoration: none;
+      text-align: left;
+      padding: 0px;
+      font-family: Inter;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+   color: black;
+   }
+   .follow ul{
+      padding-left: 0px;
+   }
+   .follow{
+       padding-right: 10px;
+   }
+   .mail{
+       margin-top:30px;
+       margin-left: 50px;
+   }
+   .mail img{
+       width:50px;
+   }
+   .Up ul li{
+       text-align: right;
+       padding-top:30px;
+       padding-right:50px;
+   }
+   .Up ul li img{
+       width:50px;
+   }
  }
