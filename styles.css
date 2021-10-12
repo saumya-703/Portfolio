@@ -55,10 +55,12 @@ letter-spacing: 0.2em;
 color: #A2A2A2;
 }
 .all{
+    background-color: black;
     position: absolute;
     text-align: center;
     left: 40%;
     top: 220px;
+    z-index: 99;
 }
 .all ul li{
     list-style: none;
